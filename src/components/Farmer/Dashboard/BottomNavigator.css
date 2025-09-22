@@ -1,0 +1,101 @@
+/* Bottom Navigation Styles */
+.bottom-navigation {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-top: 1px solid #e5e7eb;
+  z-index: 50;
+  box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1), 0 -2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 0.25rem 0;
+}
+
+.bottom-navigation-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bottom-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  min-height: 44px;
+  cursor: pointer;
+  color: #6b7280;
+  transition: color 0.2s, background-color 0.2s;
+  border-radius: 0.5rem;
+  flex: 1;
+  max-width: 20%;
+}
+
+.bottom-nav-item:hover {
+  color: #2d5a27;
+  background-color: rgba(45, 90, 39, 0.05);
+}
+
+.bottom-nav-item.active {
+  color: #2d5a27;
+  background-color: rgba(45, 90, 39, 0.1);
+}
+
+.nav-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.nav-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* Special styles for the scan button */
+.scan-item {
+  position: relative;
+  margin-top: -1.5rem;
+}
+
+.scan-button {
+  width: 3rem;
+  height: 3rem;
+  background-color: #2d5a27;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.scan-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: white;
+}
+
+.scan-item .nav-label {
+  color: #2d5a27;
+  margin-top: 0.25rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 340px) {
+  .nav-label {
+    font-size: 0.65rem;
+  }
+  
+  .scan-button {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .scan-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}

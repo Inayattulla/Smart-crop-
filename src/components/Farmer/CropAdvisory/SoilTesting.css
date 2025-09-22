@@ -1,0 +1,228 @@
+/* Service Detail Container */
+.service-detail-container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #f0fdf4 0%, #fefce8 50%, #f0fdf4 100%);
+  gap: 1rem;
+}
+
+.service-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.service-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #166534;
+  margin: 0;
+}
+
+/* Service Card */
+.service-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Buttons */
+.primary-btn {
+  background-color: #166534;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: all 0.2s;
+}
+
+.primary-btn:hover {
+  background-color: #14532d;
+  transform: translateY(-1px);
+}
+
+.outline-btn {
+  background: transparent;
+  color: #166534;
+  border: 1px solid #166534;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.outline-btn:hover {
+  background-color: #f0fdf4;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.primary-btn.large, .outline-btn.large {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-align: left;
+  padding: 1rem;
+}
+
+.btn-content {
+  flex: 1;
+}
+
+.btn-title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.btn-subtitle {
+  font-size: 0.75rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.btn-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.file-icon {
+  font-size: 1.25rem;
+}
+
+/* Soil Analysis */
+.soil-analysis {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.section-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #166534;
+  margin: 0;
+}
+
+.soil-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.soil-stat {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid;
+  text-align: center;
+}
+
+.soil-stat.success {
+  background-color: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.soil-stat.warning {
+  background-color: #fffbeb;
+  border-color: #fed7aa;
+}
+
+.soil-stat.error {
+  background-color: #fef2f2;
+  border-color: #fecaca;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem 0;
+}
+
+.soil-stat.success .stat-value {
+  color: #16a34a;
+}
+
+.soil-stat.warning .stat-value {
+  color: #d97706;
+}
+
+.soil-stat.error .stat-value {
+  color: #dc2626;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin: 0 0 0.5rem 0;
+}
+
+.stat-badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.soil-stat.success .stat-badge {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.soil-stat.warning .stat-badge {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.soil-stat.error .stat-badge {
+  background-color: #fecaca;
+  color: #b91c1c;
+}
+
+.recommendation-card {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1.3px solid;
+}
+
+.recommendation-card.info {
+  background-color: #eff6ff;
+  border-color: #bfdbfe;
+}
+
+.recommendation-card h5 {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin: 0 0 0.5rem 0;
+  color: #1e40af;
+}
+
+.recommendation-card ul {
+  font-size: 0.75rem;
+  color: #1e40af;
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.recommendation-card li {
+  margin: 0.25rem 0;
+}

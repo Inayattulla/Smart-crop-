@@ -1,0 +1,7 @@
+/* Mobile-first baseline for Smart Crop Advisory */
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+img { max-width: 100%; display: block; }
+button { font: inherit; }
+
+.App { text-align: left; }

@@ -1,0 +1,224 @@
+/* Growth Schedule Specific Styles */
+.service-detail-container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #f0fdf4 0%, #fefce8 50%, #f0fdf4 100%);
+  gap: 1rem;
+}
+
+.service-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.service-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #166534;
+  margin: 0;
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #166534;
+  color: #166534;
+  background: transparent;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.back-btn:hover {
+  background-color: #f0fdf4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.back-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.service-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.schedule-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.schedule-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border-left: 4px solid;
+}
+
+.schedule-item.success {
+  background-color: #f0fdf4;
+  border-left-color: #22c55e;
+}
+
+.schedule-item.warning {
+  background-color: #fffbeb;
+  border-left-color: #f59e0b;
+}
+
+.schedule-item.info {
+  background-color: #eff6ff;
+  border-left-color: #3b82f6;
+}
+
+.schedule-indicator {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.schedule-item.success .schedule-indicator {
+  background-color: #22c55e;
+}
+
+.schedule-item.warning .schedule-indicator {
+  background-color: #f59e0b;
+}
+
+.schedule-item.info .schedule-indicator {
+  background-color: #3b82f6;
+}
+
+.schedule-content {
+  flex: 1;
+}
+
+.schedule-title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin: 0 0 0.25rem 0;
+}
+
+.schedule-subtitle {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.schedule-progress {
+  text-align: right;
+}
+
+.progress-text {
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin: 0 0 0.25rem 0;
+}
+
+.progress-bar {
+  width: 4rem;
+  height: 0.25rem;
+  background-color: #e5e7eb;
+  border-radius: 0.125rem;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 0.125rem;
+}
+
+.schedule-item.success .progress-fill {
+  background-color: #22c55e;
+}
+
+.schedule-item.warning .progress-fill {
+  background-color: #f59e0b;
+}
+
+.schedule-item.info .progress-fill {
+  background-color: #3b82f6;
+}
+
+.upcoming-activities {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.section-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #166534;
+  margin: 0;
+}
+
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.activity-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border-left: 4px solid;
+}
+
+.activity-item.warning {
+  background-color: #fffbeb;
+  border-left-color: #f59e0b;
+}
+
+.activity-item.info {
+  background-color: #eff6ff;
+  border-left-color: #3b82f6;
+}
+
+.activity-icon {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+}
+
+.activity-item.warning .activity-icon {
+  color: #f59e0b;
+}
+
+.activity-item.info .activity-icon {
+  color: #3b82f6;
+}
+
+.activity-content {
+  flex: 1;
+}
+
+.activity-title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin: 0 0 0.125rem 0;
+}
+
+.activity-time {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin: 0;
+}
